@@ -21,7 +21,13 @@ ms.subservice: general-ide
 
 ## File nesting options
 
+:::moniker range="visualstudio"
+![Screenshot that shows the button for turning file nesting on and off.](media/visualstudio/file-nesting-on-off.png)
+:::moniker-end
+
+:::moniker range="vs-2022"
 ![Button for turning file nesting on/off](media/filenesting_onoff.png)
+:::moniker-end
 
 The available options for non-customized file nesting are:
 
@@ -41,7 +47,13 @@ If you don’t like what you get out-of-the-box, you can create your own, custom
 
 We recommend you use **Web** settings as your starting point because it’s easier to work with something that already functions. If you use the **Web** settings as your starting point, the *.filenesting.json* file looks similar to the following file:
 
+:::moniker range="visualstudio"
+![Screenshot that shows nesting rule providers in a custom settings file.](media/visualstudio/file-nesting-edit-custom.png)
+:::moniker-end
+
+:::moniker range="vs-2022"
 ![Use existing file nesting rules as the basis for custom settings](media/filenesting_editcustom.png)
+:::moniker-end
 
 Let’s focus on the node **dependentFileProviders** and its child nodes. Each child node is a type of rule that Visual Studio can use to nest files. For example, **having the same filename, but a different extension** is one type of rule. The available rules are:
 
@@ -61,9 +73,17 @@ Let’s focus on the node **dependentFileProviders** and its child nodes. Each c
 
 This provider lets you define file nesting rules using specific file extensions. Consider the following example:
 
+:::moniker range="visualstudio"
+![Screenshot that shows an extentionToExtension rule.](media/visualstudio/file-nesting-extensiontoextension.png)
+
+![Screenshot that shows the effect of the extensionToExtension rule.](media/visualstudio/file-nesting-extensiontoextension-effect.png)
+:::moniker-end
+
+:::moniker range="vs-2022"
 ![extentionToExtension example rules](media/filenesting_extensiontoextension.png)
 
 ![extentionToExtension example effect](media/filenesting_extensiontoextension_effect.png)
+:::moniker-end
 
 * *cart.js* is nested under *cart.ts* because of the first **extensionToExtension** rule
 
@@ -77,9 +97,17 @@ This provider lets you define file nesting rules using specific file extensions.
 
 This provider works just like the **extensionToExtension** provider, with the only difference being that the rule looks at the suffix of the file instead of just the extension. Consider the following example:
 
+:::moniker range="visualstudio"
+![Screenshot that shows a fileSuffixToExtension rule.](media/visualstudio/file-nesting-filesuffixtoextension.png)
+
+![Screenshot that shows the effect of the fileSuffixToExtension rule.](media/visualstudio/file-nesting-filesuffixtoextension-effect.png)
+:::moniker-end
+
+:::moniker range="vs-2022"
 ![fileSuffixToExtension example rules](media/filenesting_filesuffixtoextension.png)
 
 ![fileSuffixToExtension example effect](media/filenesting_filesuffixtoextension_effect.png)
+:::moniker-end
 
 * *portal-vsdoc.js* is nested under *portal.js* because of the **fileSuffixToExtension** rule
 
@@ -91,9 +119,21 @@ This provider nests files with an additional extension under the file without an
 
 Consider the following example:
 
+:::moniker range="visualstudio"
+    
+![Screenshot that shows the addedextension provider.](media/visualstudio/file-nesting-addedextension.png)
+
+![Screenshot that shows the effect of the addedextension provider.](media/visualstudio/file-nesting-addedextension-effect.png)
+
+:::moniker-end
+
+:::moniker range="vs-2022"
+    
 ![addedExtension example rules](media/filenesting_addedextension.png)
 
 ![addedExtension example effect](media/filenesting_addedextension_effect.png)
+
+:::moniker-end
 
 * *file.html.css* is nested under *file.html* because of the **addedExtension** rule
 
@@ -106,9 +146,17 @@ This provider nests files with an additional extension under a file without an a
 
 Consider the following example:
 
+:::moniker range="visualstudio"
+![Screenshot that shows a pathSegment rule.](media/visualstudio/file-nesting-pathsegment.png)
+
+![Screenshot that shows the effect of the pathSegment rule.](media/visualstudio/file-nesting-pathsegment-effect.png)
+:::moniker-end
+
+:::moniker range="vs-2022"
 ![pathSegment example rules](media/filenesting_pathsegment.png)
 
 ![pathSegment example effect](media/filenesting_pathsegment_effect.png)
+:::moniker-end
 
 * *jquery.min.js* is nested under *jquery.js* because of the **pathSegment** rule
 
@@ -133,9 +181,17 @@ Consider the following example:
 
 This provider lets you define file nesting rules for files with any extension but the same base file name. Consider the following example:
 
+:::moniker range="visualstudio"
+![Screenshot that shows the allExtensions provider.](media/visualstudio/file-nesting-allextensions.png)
+
+![Screenshot that shows the effect of the allExtensions provider.](media/visualstudio/fil-enesting-allextensions-effect.png)
+:::moniker-end
+
+:::moniker range="vs-2022"
 ![allExtensions example rules](media/filenesting_allextensions.png)
 
 ![allExtensions example effect](media/filenesting_allextensions_effect.png)
+:::moniker-end
 
 * *template.cs* and *template.doc* are nested under *template.tt* because of the **allExtensions** rule.
 
@@ -143,9 +199,17 @@ This provider lets you define file nesting rules for files with any extension bu
 
 This provider lets you define file nesting rules based on entire filenames. Consider the following example:
 
+:::moniker range="visualstudio"
+![Screenshot that shows a fileToFile rule.](media/visualstudio/file-nesting-filetofile.png)
+
+![Screenshot that shows the effect of the fileToFile rule.](media/visualstudio/file-nesting-filetofile-effect.png)
+:::moniker-end
+
+:::moniker range="vs-2022"
 ![fileToFile example rules](media/filenesting_filetofile.png)
 
 ![fileToFile example effect](media/filenesting_filetofile_effect.png)
+:::moniker-end
 
 * *.bowerrc* is nested under *bower.json* because of the **fileToFile** rule
 
@@ -159,7 +223,14 @@ Ordering is also important for rule sections themselves, not just for files with
 
 You can manage all settings, including your own custom settings, through the same button in **Solution Explorer**:
 
+
+:::moniker range="visualstudio"
+![Screenshot that shows the menu items for activating custom file nesting rules.](media/visualstudio/file-nesting-activate-custom.png)
+:::moniker-end
+
+:::moniker range="vs-2022"
 ![Activate custom file nesting rules](media/filenesting_activatecustom.png)
+:::moniker-end
 
 ## Create project-specific settings
 
