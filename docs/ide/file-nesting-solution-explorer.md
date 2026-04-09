@@ -199,7 +199,7 @@ This provider lets you define file nesting rules for files with any extension bu
 ![allExtensions example effect](media/filenesting_allextensions_effect.png)
 :::moniker-end
 
-* *template.cs* and *template.doc* are nested under *template.tt* because of the **allExtensions** rule.
+* *Template.cs* and *Template.doc* are nested under *Template.tt* because of the **allExtensions** rule.
 
 ### The fileToFile provider
 
