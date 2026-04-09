@@ -37,7 +37,13 @@ The available options for non-customized file nesting are:
 
 * **Web**: This option applies the **Web** file nesting behavior to all the projects in the current solution. It has numerous rules, and we encourage you to check it out and tell us what you think. The following screenshot highlights just a few examples of the file nesting behavior that you get with this option:
 
+   :::moniker range="visualstudio"   
+   ![Screenshot that shows file nesting in Solution Explorer.](media/visualstudio/file-nesting.png)
+   :::moniker-end
+
+   :::moniker range="vs-2022"   
    ![File nesting in Solution Explorer](media/filenesting.png)
+   :::moniker-end
 
 ## Customize file nesting
 
