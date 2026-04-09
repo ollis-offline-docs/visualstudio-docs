@@ -121,9 +121,9 @@ Consider the following example:
 
 :::moniker range="visualstudio"
     
-![Screenshot that shows the addedextension provider.](media/visualstudio/file-nesting-addedextension.png)
+![Screenshot that shows the addedextension rule.](media/visualstudio/file-nesting-addedextension.png)
 
-![Screenshot that shows the effect of the addedextension provider.](media/visualstudio/file-nesting-addedextension-effect.png)
+![Screenshot that shows the effect of the addedextension rule.](media/visualstudio/file-nesting-addedextension-effect.png)
 
 :::moniker-end
 
@@ -182,9 +182,9 @@ Consider the following example:
 This provider lets you define file nesting rules for files with any extension but the same base file name. Consider the following example:
 
 :::moniker range="visualstudio"
-![Screenshot that shows the allExtensions provider.](media/visualstudio/file-nesting-allextensions.png)
+![Screenshot that shows the allExtensions rule.](media/visualstudio/file-nesting-allextensions.png)
 
-![Screenshot that shows the effect of the allExtensions provider.](media/visualstudio/fil-enesting-allextensions-effect.png)
+![Screenshot that shows the effect of the allExtensions rule.](media/visualstudio/file-nesting-allextensions-effect.png)
 :::moniker-end
 
 :::moniker range="vs-2022"
