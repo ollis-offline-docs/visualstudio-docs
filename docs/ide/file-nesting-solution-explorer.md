@@ -91,13 +91,13 @@ This provider lets you define file nesting rules using specific file extensions.
 ![extentionToExtension example effect](media/filenesting_extensiontoextension_effect.png)
 :::moniker-end
 
-* *file.js* is nested under *file.ts* because of the first **extensionToExtension** rule
+* *file.js* is nested under *file.ts* because of the first **extensionToExtension** rule.
 
-* *cart.js* is not nested under *cart.tsx* because `.ts` comes before `.tsx` in the rules, and there can only be one parent
+* *file.js* isn't nested under *file.tsx* because `.ts` comes before `.tsx` in the rules, and there can only be one parent.
 
-* *light.css* is nested under *light.sass* because of the second **extensionToExtension** rule
+* *light.css* is nested under *light.sass* because of the second **extensionToExtension** rule.
 
-* *home.html* is nested under *home.md* because of the third **extensionToExtension** rule
+* *home.html* is nested under *home.md* because of the third **extensionToExtension** rule.
 
 ### The fileSuffixToExtension provider
 
@@ -115,9 +115,9 @@ This provider works just like the **extensionToExtension** provider, with the on
 ![fileSuffixToExtension example effect](media/filenesting_filesuffixtoextension_effect.png)
 :::moniker-end
 
-* *portal-vsdoc.js* is nested under *portal.js* because of the **fileSuffixToExtension** rule
+* *portal-vsdoc.js* is nested under *portal.js* because of the **fileSuffixToExtension** rule.
 
-* every other aspect of the rule works the same way as **extensionToExtension**
+* Every other aspect of the rule works the same way as **extensionToExtension**.
 
 ### The addedExtension provider
 
@@ -141,7 +141,7 @@ Consider the following example:
 
 :::moniker-end
 
-* *file.html.css* is nested under *file.html* because of the **addedExtension** rule
+* *file.html.css* is nested under *file.html* because of the **addedExtension** rule.
 
 > [!NOTE]
 > You don't specify any file extensions for the `addedExtension` rule; it automatically applies to all file extensions. That is, any file with the same name and extension as another file plus an additional extension on the end is nested under the other file. You can't limit the effect of this provider to just specific file extensions.
@@ -164,7 +164,7 @@ Consider the following example:
 ![pathSegment example effect](media/filenesting_pathsegment_effect.png)
 :::moniker-end
 
-* *jquery.min.js* is nested under *jquery.js* because of the **pathSegment** rule
+* *jquery.min.js* is nested under *jquery.js* because of the **pathSegment** rule.
 
 > [!NOTE]
 > - If you don't specify any specific file extensions for the `pathSegment` rule, it applies to all file extensions. That is, any file with the same name and extension as another file plus an additional extension in the middle is nested under the other file.
@@ -217,7 +217,7 @@ This provider lets you define file nesting rules based on entire filenames. Cons
 ![fileToFile example effect](media/filenesting_filetofile_effect.png)
 :::moniker-end
 
-* *.bowerrc* is nested under *bower.json* because of the **fileToFile** rule
+* *file.npmrc* is nested under *package.json* because of the **fileToFile** rule.
 
 ### Rule order
 
