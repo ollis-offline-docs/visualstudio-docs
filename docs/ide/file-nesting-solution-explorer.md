@@ -91,7 +91,7 @@ This provider lets you define file nesting rules using specific file extensions.
 ![extentionToExtension example effect](media/filenesting_extensiontoextension_effect.png)
 :::moniker-end
 
-* *cart.js* is nested under *cart.ts* because of the first **extensionToExtension** rule
+* *file.js* is nested under *file.ts* because of the first **extensionToExtension** rule
 
 * *cart.js* is not nested under *cart.tsx* because `.ts` comes before `.tsx` in the rules, and there can only be one parent
 
