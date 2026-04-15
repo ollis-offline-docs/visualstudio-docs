@@ -47,17 +47,24 @@ The available options for non-customized file nesting are:
 
 ## Customize file nesting
 
-If you don’t like what you get out-of-the-box, you can create your own, custom file nesting settings that instruct **Solution Explorer** how to nest files. You can add as many custom file nesting settings as you like, and you can switch between them as desired. To create a new custom setting, you can start with an empty file, or you can use the **Web** settings as your starting point:
+
 
 :::moniker range="visualstudio"
+If you don’t like what you get out-of-the-box, you can create your own, custom file nesting settings that instruct **Solution Explorer** how to nest files. You can add as many custom file nesting settings as you like, and you can switch between them as desired. To create a new custom setting, you can start with an empty file, or you can use the **Default** settings as your starting point:
+
 ![Screenshot that shows the Add Custom File Nesting Settings dialog.](media/visualstudio/file-nesting-add-custom.png)
+
+We recommend you use **Default** settings as your starting point because it’s easier to work with something that already functions. If you use the **Default** settings as your starting point, the *.filenesting.json* file looks similar to the following file:
+
 :::moniker-end
 
 :::moniker range="vs-2022"
+If you don’t like what you get out-of-the-box, you can create your own, custom file nesting settings that instruct **Solution Explorer** how to nest files. You can add as many custom file nesting settings as you like, and you can switch between them as desired. To create a new custom setting, you can start with an empty file, or you can use the **Web** settings as your starting point:
+
 ![Add custom file nesting rules](media/filenesting_addcustom.png)
-:::moniker-end
 
 We recommend you use **Web** settings as your starting point because it’s easier to work with something that already functions. If you use the **Web** settings as your starting point, the *.filenesting.json* file looks similar to the following file:
+:::moniker-end
 
 :::moniker range="visualstudio"
 ![Screenshot that shows nesting rule providers in a custom settings file.](media/visualstudio/file-nesting-edit-custom.png)
