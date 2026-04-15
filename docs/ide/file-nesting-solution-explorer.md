@@ -253,9 +253,15 @@ You can manage all settings, including your own custom settings, through the sam
 
 ## Create project-specific settings
 
+:::moniker range="visualstudio"
+You can create solution-specific and project-specific settings by adding a *.filenesting.json* file to the solution root or project root folder.
+:::moniker-end
+
+:::moniker range="vs-2022"
 You can create solution-specific and project-specific settings through the right-click menu (context menu) of each solution and project:
 
 ![Solution and project-specific nesting rules](media/filenesting_solutionprojectspecific.png)
+:::moniker-end
 
 Solution-specific and project-specific settings are combined with the active Visual Studio settings. For example, you may have a blank project-specific settings file, but **Solution Explorer** is still nesting files. The nesting behavior is coming from either the solution-specific settings or the Visual Studio settings. The precedence for merging file nesting settings is: Visual Studio > Solution > Project.
 
