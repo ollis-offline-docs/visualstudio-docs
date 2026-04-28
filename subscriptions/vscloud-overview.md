@@ -34,7 +34,7 @@ You can buy Visual Studio cloud subscriptions through the Visual Studio Marketpl
 
 3. Select the "pay-as-you-go" Azure subscription to use for billing. You can create a new Azure subscription if you don't have one.
    > [!div class="mx-imgBorder"]
-   > [![Select Azure subscription for billing](media/buy-vs-subscriptions/buy-vs-sub-azure-sub.png "Screenshot of the monthly subscription purchase dialog. The Billing blade is selected.")](media/buy-vs-subscriptions/buy-vs-sub-azure-sub.png#lightbox)
+   > [![Select Azure subscription for billing](media/buy-vs-subscriptions/buy-visual-studio-sub-azure-sub.png "Screenshot of the monthly subscription purchase dialog. The Billing blade is selected.")](media/buy-vs-subscriptions/buy-visual-studio-sub-azure-sub.png#lightbox)
 
 4. Select the number of subscriptions to buy and continue.
    > [!div class="mx-imgBorder"]
@@ -58,15 +58,15 @@ You can also proceed to the [Visual Studio Subscriptions Admin portal](https://m
 To cancel cloud subscriptions, and if you're an admin, you just need to set the number of subscriptions for your agreement to zero (0). Follow these steps to reduce the number of subscriptions:
 1. Sign in to <https://manage.visualstudio.com>.
 1. If you have more than one agreement, select the appropriate agreement.
-1. Select the Overview icon in the top left corner to display information about your subscriptions. 
+1. Select the **Overview** icon in the top left corner to display information about your subscriptions. 
    > [!div class="mx-imgBorder"]
    > [![Display subscription overview](media/buy-vs-subscriptions/overview-button.png "Screenshot showing the Visual Studio subscriptions management portal. The Overview button at the top left is highlighted.")](media/buy-vs-subscriptions/overview-button.png#lightbox)
 
-4. Locate the entry for the subscriptions you wish to cancel and select Change quantity.
+4. Locate the entry for the subscriptions you wish to cancel and select **Change quantity**.
    > [!div class="mx-imgBorder"]
    > [![Change quantity](media/buy-vs-subscriptions/cloud-change-quantity.png "Screenshot of the Visual Studio subscriptions management portal. The Change quantity option is highlighted.")](media/buy-vs-subscriptions/cloud-change-quantity.png#lightbox)
 
-5. You're redirected to the Marketplace where you can edit the number of monthly subscriptions by reducing the number of Paid users.
+5. You're redirected to the Marketplace where you can edit the number of monthly subscriptions by reducing the number of **Paid users**.
    > [!div class="mx-imgBorder"]
    > [![Reduce Paid users quanity](media/buy-vs-subscriptions/cloud-reduce-paid-users.png "Screnshot of monthly subscription purchase dialog. 'New total Paid users' option is highlighted.")](media/buy-vs-subscriptions/cloud-reduce-paid-users.png#lightbox)
 6. Update the quantity to zero (0) and select confirm. 
