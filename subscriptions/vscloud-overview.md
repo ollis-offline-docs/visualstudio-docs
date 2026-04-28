@@ -34,7 +34,7 @@ You can buy Visual Studio cloud subscriptions through the Visual Studio Marketpl
 
 3. Select the "pay-as-you-go" Azure subscription to use for billing. You can create a new Azure subscription if you don't have one.
    > [!div class="mx-imgBorder"]
-   > [![Select Azure subscription for billing](media/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png "Screenshot of the monthly subscription purchase dialog. The Billing blade is selected.")](media/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png#lightbox)
+   > [![Select Azure subscription for billing](media/buy-vs-subscriptions/buy-vs-sub-azure-sub.png "Screenshot of the monthly subscription purchase dialog. The Billing blade is selected.")](media/buy-vs-subscriptions/buy-vs-sub-azure-sub.png#lightbox)
 
 4. Select the number of subscriptions to buy and continue.
    > [!div class="mx-imgBorder"]
