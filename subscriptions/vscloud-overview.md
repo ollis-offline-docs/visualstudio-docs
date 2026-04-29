@@ -2,21 +2,21 @@
 title: Purchase Visual Studio cloud subscriptions
 author: joseb-rdc
 ms.author: amast
-ms.manager:  shve
-ms.date: 01/09/2026
+ms.manager: shve
+ms.date: 04/28/2026
 ms.topic: overview
-description: Purchase (rent) Visual Studio Professional or Visual Studio Enterprise on a month-to-month or annual basis, with no long-term contract.
+description: Purchase (rent) Visual Studio Enterprise or Visual Studio Professional on a month-to-month basis, with no long-term contract.
 ms.custom: sfi-image-nochange
 ---
 
-# Buy Visual Studio Professional and Visual Studio Enterprise cloud subscriptions
+# Buy Visual Studio Enterprise and Visual Studio Professional cloud subscriptions
 
-You can buy [Visual Studio Professional and Visual Studio Enterprise subscriptions](https://visualstudio.microsoft.com/subscriptions/) from the [Visual Studio Marketplace](https://marketplace.visualstudio.com). These subscriptions are called **"cloud subscriptions"**.
+You can buy [Visual Studio Enterprise and Visual Studio Professional subscriptions](https://visualstudio.microsoft.com/subscriptions/) from the [Visual Studio Marketplace](https://marketplace.visualstudio.com). These subscriptions are called **"cloud subscriptions"**.
 
 [Compare cloud subscription benefits and pricing](https://visualstudio.microsoft.com/vs/pricing/).
 
 > [!NOTE]
-> Microsoft no longer offers Visual Studio Professional Annual subscriptions and Visual Studio Enterprise Annual subscriptions in Cloud Subscriptions. There's no change to existing customers' experience and ability to renew, increase, decrease, or cancel their subscriptions. New customers are encouraged to go to [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) to explore different options to purchase Visual Studio. You can still purchase new monthly cloud subscriptions.
+> Microsoft no longer offers Visual Studio Enterprise Annual subscriptions and Visual Studio Professional Annual subscriptions in Cloud Subscriptions. There's no change to existing customers' experience and ability to renew, increase, decrease, or cancel their subscriptions. New customers are encouraged to go to [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) to explore different options to purchase Visual Studio. You can still purchase new monthly cloud subscriptions.
 
 ## Before you start
 
@@ -24,7 +24,7 @@ To bill your purchases, you need an [Azure subscription](https://azure.microsoft
 
 ## Who can buy Visual Studio cloud subscriptions?
 
-You need to be a contributor or higher for an Azure subscription that was created for your EA subscription to purchase cloud subscriptions.
+You can buy Visual Studio cloud subscriptions through the Visual Studio Marketplace if you have an Azure subscription for billing and are assigned **Contributor access or higher** on that subscription.
 
 ## How to buy cloud subscriptions
 
@@ -34,52 +34,48 @@ You need to be a contributor or higher for an Azure subscription that was create
 
 3. Select the "pay-as-you-go" Azure subscription to use for billing. You can create a new Azure subscription if you don't have one.
    > [!div class="mx-imgBorder"]
-   > [![Select Azure subscription for billing](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png "Screenshot of the monthly subscription purchase dialog. The Billing blade is selected.")](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png#lightbox)
+   > [![Select Azure subscription for billing](media/buy-vs-subscriptions/buy-visual-studio-sub-azure-sub.png "Screenshot of the monthly subscription purchase dialog. The Billing blade is selected.")](media/buy-vs-subscriptions/buy-visual-studio-sub-azure-sub.png#lightbox)
 
-4. Select the number of subscriptions to buy.
+4. Select the number of subscriptions to buy and continue.
    > [!div class="mx-imgBorder"]
-   > [![Select number of subscriptions](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Screenshot of the monthly subscription purchase dialog. The Continue button is highlighted.")](_img/buy-vs-subscriptions/buy-vs-sub-users.png#lightbox)
+   > [![Select number of subscriptions](media/buy-vs-subscriptions/buy-vs-sub-users.png "Screenshot of the monthly subscription purchase dialog. The Continue button is highlighted.")](media/buy-vs-subscriptions/buy-vs-sub-users.png#lightbox)
 
-   If you don't want subscriptions assigned to yourself, don't select the **Assign this subscription to me** button during the purchase flow.
-
-5. Confirm and finish your purchase. If you assigned a subscription to yourself, you can visit the [Visual Studio subscription portal](https://my.visualstudio.com)
-to start downloading software and using other subscriber benefits.
+5. After the purchase is complete, assign the subscription by selecting **Assign one subscription to me** or select **Manage users** to assign the subscription to another user.
    > [!div class="mx-imgBorder"]
-   > [![Finish purchase successfully](_img/buy-vs-subscriptions/cloud-self-assign.png "Screenshot of a monthly subscription purchase confirmation dialog showing the purchase of one subscription and Assign one subscription to me option.")](_img/buy-vs-subscriptions/cloud-self-assign.png#lightbox)
+   > [![Finish purchase successfully](media/buy-vs-subscriptions/cloud-self-assign.png "Screenshot of a monthly subscription purchase confirmation dialog showing the purchase of one subscription and Assign one subscription to me option.")](media/buy-vs-subscriptions/cloud-self-assign.png#lightbox)
 
-6. Select **Manage users** to open the subscription portal and begin using your subscription.
-
-   If you purchased more than one subscription, you can proceed to the
-    [Visual Studio Subscriptions Admin portal](https://manage.visualstudio.com) to assign subscriptions to others. You might need to [add your new subscriptions](add-monthly-subs.md) to the Admin Portal if this purchase is your first.
+To assign subscriptions to other users, select **Manage users**. This action opens the Visual Studio Admin portal where you can assign subscriptions to others.
    > [!div class="mx-imgBorder"]
-   > [![Assign subscriptions to others](_img/buy-vs-subscriptions/cloud-manage-users.png "Screenshot of a monthly subscription purchase dialog. 'Manage users' button is highlighted.")](_img/buy-vs-subscriptions/cloud-manage-users.png#lightbox)
+   > [![Assign subscriptions to others](media/buy-vs-subscriptions/cloud-manage-users.png "Screenshot of a monthly subscription purchase dialog. 'Manage users' button is highlighted.")](media/buy-vs-subscriptions/cloud-manage-users.png#lightbox)
+
+You can also proceed to the [Visual Studio Subscriptions Admin portal](https://manage.visualstudio.com) to assign subscriptions to others. You might need to [add your new subscriptions](add-monthly-subs.md) to the Admin Portal if this purchase is your first.
 
    > [!div class="mx-imgBorder"]
-   > [![View subscriptions](_img/buy-vs-subscriptions/add-cloud-user.png "Screenshot of the Visual Studio subscriptions management portal. The Add blade is highlighted. Select 'Individual subscriber' to assign subscriptions to users.")](_img/buy-vs-subscriptions/add-cloud-user.png#lightbox)
+   > [![Manage subscribers](media/buy-vs-subscriptions/add-cloud-user.png "Screenshot of the Visual Studio Admin portal with the Add Individual Subscriber highlighted.")](media/buy-vs-subscriptions/add-cloud-user.png#lightbox)
 
 ## <a name="manage-subscriptions"></a>Cancel renewals of cloud subscriptions you previously purchased
 
-To cancel subscriptions, and if you're an admin, you just need to set the number of subscriptions for your agreement to zero (0). Follow these steps to reduce the number of subscriptions:
+To cancel cloud subscriptions, and if you're an admin, you just need to set the number of subscriptions for your agreement to zero (0). Follow these steps to reduce the number of subscriptions:
 1. Sign in to <https://manage.visualstudio.com>.
-1. If you have more than one agreement, choose the desired agreement from the drop-down list.
-1. Select the **Overview** icon at the top left to display information about your subscriptions. 
+1. If you have more than one agreement, select the appropriate agreement.
+1. Select the **Overview** icon in the top left corner to display information about your subscriptions. 
    > [!div class="mx-imgBorder"]
-   > [![Display subscription overview](_img/buy-vs-subscriptions/overview-button.png "Screenshot showing the Visual Studio subscriptions management portal. The Overview button at the top left is highlighted.")](_img/buy-vs-subscriptions/overview-button.png#lightbox)
+   > [![Display subscription overview](media/buy-vs-subscriptions/overview-button.png "Screenshot showing the Visual Studio subscriptions management portal. The Overview button at the top left is highlighted.")](media/buy-vs-subscriptions/overview-button.png#lightbox)
 
 4. Locate the entry for the subscriptions you wish to cancel and select **Change quantity**.
    > [!div class="mx-imgBorder"]
-   > [![Change quantity](_img/buy-vs-subscriptions/cloud-change-quantity.png "Screenshot of the Visual Studio subscriptions management portal. The Change quantity option is highlighted.")](_img/buy-vs-subscriptions/cloud-change-quantity.png#lightbox)
+   > [![Change quantity](media/buy-vs-subscriptions/cloud-change-quantity.png "Screenshot of the Visual Studio subscriptions management portal. The Change quantity option is highlighted.")](media/buy-vs-subscriptions/cloud-change-quantity.png#lightbox)
 
 5. You're redirected to the Marketplace where you can edit the number of monthly subscriptions by reducing the number of **Paid users**.
    > [!div class="mx-imgBorder"]
-   > [![Reduce Paid users quanity](_img/buy-vs-subscriptions/cloud-reduce-paid-users.png "Screnshot of monthly subscription purchase dialog. 'New total Paid users' option is highlighted.")](_img/buy-vs-subscriptions/cloud-reduce-paid-users.png#lightbox)
-6. Set the quantity to zero (0) and select confirm. 
+   > [![Reduce Paid users quanity](media/buy-vs-subscriptions/cloud-reduce-paid-users.png "Screnshot of monthly subscription purchase dialog. 'New total Paid users' option is highlighted.")](media/buy-vs-subscriptions/cloud-reduce-paid-users.png#lightbox)
+6. Update the quantity to zero (0) and select confirm. 
 Your subscriptions remain in place until their scheduled billing date, but don't renew when the billing date is reached. 
    > [!div class="mx-imgBorder"]
-   > [![Confirm Paid users quantity](_img/buy-vs-subscriptions/cloud-confirm-reduce.png "Screenshot of monthly subscription purchase dialog. You are good to go! and Manage user button highlighted.")](_img/buy-vs-subscriptions/cloud-confirm-reduce.png#lightbox)
-7. Back in the Manage Portal, you'll see a caution symbol and "Expires" note for any subscription scheduled to end.
+   > [![Confirm Paid users quantity](media/buy-vs-subscriptions/cloud-confirm-reduce.png "Screenshot of monthly subscription purchase dialog. You are good to go! and Manage user button highlighted.")](media/buy-vs-subscriptions/cloud-confirm-reduce.png#lightbox)
+7. Back in the Manage Portal, you see a caution symbol and "Expires" note for any subscription scheduled to end.
    > [!dev class="mx-imgBorder"]
-   > [![Manage portal](_img/buy-vs-subscriptions/cloud-expires-warning.png "Screenshot of the Visual Studio subscriptions management portal. A subscription with 'Expires' note is highligthed.")](_img/buy-vs-subscriptions/cloud-expires-warning.png#lightbox)
+   > [![Manage portal](media/buy-vs-subscriptions/cloud-expires-warning.png "Screenshot of the Visual Studio subscriptions management portal. A subscription with 'Expires' note is highligthed.")](media/buy-vs-subscriptions/cloud-expires-warning.png#lightbox)
 
 ## Frequently asked questions
 
@@ -101,7 +97,7 @@ There are also many options through our volume licensing program. You can resear
 
 A: You receive perpetual license rights for the Visual Studio IDE that came with the subscription. When it's time to renew, you only pay the software assurance price, which is lower.
 
-### For existing annual cloud subscribers
+### For existing annual cloud subscribers:
 
 #### Q: How does the end of annual cloud subscription sales affect me?
 
@@ -113,7 +109,7 @@ A: No. Your subscriptions remain in place and you're able to manage them as you 
 
 #### Q: What if I want to increase the number of subscriptions for my customers?
 
-A: Annual subscriptions that are purchased during a given month are charged immediately for a full year and are valid for a full year. So, you can modify the number of licenses only in the current month of purchase (they're valid for one year and charged for one year). Outside of the month of purchase, it's no longer possible to increase the number of subscriptions.
+A: Annual subscriptions that are purchased during a given month are charged immediately and are valid for a full year. So, you can modify the number of licenses only in the current month of purchase (they're valid for one year and charged for one year). Outside of the month of purchase, it's no longer possible to increase the number of subscriptions.
 
 #### Q: What if I want to decrease the number of subscriptions for my customers?
 
