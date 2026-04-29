@@ -1,7 +1,7 @@
 ---
 title: Get faster load & run times with solution filters
 description: Explore the solution filtering feature in Visual Studio and discover how it allows you to quickly load a subset of projects in a solution.
-ms.date: 04/22/2019
+ms.date: 04/24/2026
 ms.topic: how-to
 helpviewer_keywords:
  - "filtered solution"
@@ -37,17 +37,17 @@ To open a solution without loading any of its projects by using the **Open Proje
 
 1. Choose **File** > **Open** > **Project/Solution** from the menu bar.
 
-2. In the **Open Project** dialog, select the solution, and then select **Do not load projects**.
+2. In the **Open Project/Solution** dialog, select the solution, and then select **Do not load projects**.
 
-   ![Visual Studio Open Project dialog with do not load projects checked](media/filtered-solutions/do-not-load-projects.png)
+   ![Screenshot of the Visual Studio Open Project dialog with Do not load projects selected.](media/visualstudio/do-not-load-projects.png)
 
 3. Choose **Open**.
 
    The solution opens with all of its projects unloaded.
 
-4. In **Solution Explorer**, select the projects you want to load (press **Ctrl** while clicking to select more than one project), and then right-click on the project and choose **Reload Project**.
+4. In **Solution Explorer**, select the projects you want to load (press **Ctrl** while clicking to select more than one project), and then right-click the projects and select **Reload Project**.
 
-   ![Reload multiple projects in Visual Studio Solution Explorer](media/filtered-solutions/reload-project.png)
+   ![Screenshot of the Reload Project option.](media/visualstudio/reload-project.png)
 
    Visual Studio will remember which projects are loaded the next time you open the solution locally.
 
@@ -69,13 +69,13 @@ You can choose to see either all the projects in the solution or just the loaded
 
 - Select the solution node to enable the **Show All Files** button; then, click the button to toggle the visibility of unloaded projects.
 
-   ![Show All Files button in Visual Studio Solution Explorer](media/filtered-solutions/show-all-files.PNG)
+   ![Screenshot of the Show All Files button in Visual Studio Solution Explorer.](media/visualstudio/show-all-files.png)
 
 ## Load project dependencies
 
-In a solution where only selected projects are loaded, you may not have all of a project's project dependencies loaded. Use the **Load project dependencies** menu option to ensure that any projects that a project depends on are also loaded. Right-click on one or more loaded projects in **Solution Explorer** and choose **Load project dependencies**.
+In a solution where only selected projects are loaded, you may not have all of a project's project dependencies loaded. Use the load project dependencies menu options to ensure that any projects that a project depends on are also loaded. Right-click one or more loaded projects in **Solution Explorer** and select either **Load Direct Dependencies** or **Load Entire Dependency Tree**.
 
-![Load project dependencies in Visual Studio 2019](media/filtered-solutions/load-project-dependencies.png)
+![Screenshot of the load project dependencies options.](media/visualstudio/load-project-dependencies.png)
 
 ## Solution filter files
 
@@ -83,22 +83,22 @@ If you want to share your project-load configuration or commit it to source cont
 
 Solution filter files are visually differentiated from regular solution files by the additional funnel glyph in the icon next to the solution in **Solution Explorer**. The name of the filter and the number of loaded projects are also shown next to the solution name.
 
-![Solution filter file open in Visual Studio Solution Explorer](media/filtered-solutions/solution-filter.PNG)
+![Screenshot of a solution filter file open in Visual Studio Solution Explorer.](media/visualstudio/solution-filter.png)
 
 > [!NOTE]
 > If new projects are added to the original solution after you create the solution filter file, they appear as unloaded projects in **Solution Explorer**.
 
 ### Create a solution filter file
 
-1. In **Solution Explorer**, right-click on the solution and select **Save As Solution Filter**.
+1. On the **File** menu, select **Save Solution As Filter**.
 
-   ![Save As Solution Filter menu in Visual Studio Solution Explorer](media/filtered-solutions/save-as-solution-filter.png)
+   ![Screenshot of the Save Solution As Filter option.](media/visualstudio/save-as-solution-filter.png)
 
 2. Choose a name and location for the solution filter file.
 
-After you create a solution filter file, it's added to your **Recent Projects and Solutions** list for easy access:
+After you create a solution filter file, it's added to your recent projects and solutions list for easy access:
 
-![Open recent in Visual Studio](media/filtered-solutions/open-recent.png)
+![Screenshot of the Open recent list in Visual Studio.](media/visualstudio/open-recent.png)
 
 ## Related content
 
