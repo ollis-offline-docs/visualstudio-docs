@@ -16,7 +16,9 @@ ai-usage: ai-assisted
 
 # Use MCP servers
 
-Model Context Protocol (MCP) is an open standard that enables AI models to interact with external tools and services through a unified interface. In Visual Studio, MCP support enhances GitHub Copilot agent mode by allowing you to connect any MCP-compatible server to your agentic coding workflow.
+Model Context Protocol (MCP) is an open standard that lets GitHub Copilot use tools and services outside the IDE. In Visual Studio, MCP lets GitHub Copilot agents use external tools by connecting MCP clients to MCP servers that expose important functionality like file access, repo management, or PR creation. By standardizing how tools are discovered and invoked, MCP removes the need for custom integrations and makes it easy to extend AI assistants simply by adding new MCP servers.
+
+MCP support enhances GitHub Copilot agent mode by allowing you to connect any MCP-compatible server to your agentic coding workflow. For example, with the GitHub MCP server enabled, you can have copilot create and manage PRs or let you know if there are PRs that need your review. With the Azure DevOps MCP server enabled, you can have Copilot create and manage work items. 
 
 This article guides you through setting up MCP servers and using tools with agent mode in Visual Studio.
 
@@ -38,103 +40,11 @@ For example, an MCP server for a file system might provide tools for reading, wr
 
 By standardizing this interaction, MCP eliminates the need for custom integrations between each AI model and each tool. You can then extend your AI assistant's capabilities by simply adding new MCP servers to your workspace. [Learn more about the MCP specification](https://modelcontextprotocol.io/specification/draft).
 
-## Configuration example with a GitHub MCP server
-
-The following walkthrough requires version 17.14.9 or later.
-
-1. Create a new file: `<SOLUTIONDIR>\.mcp.json` or `%USERPROFILE%\.mcp.json`. We recommend that you use Visual Studio to edit this file so that its JSON schema is automatically applied.
-
-2. Paste the following contents into the `.mcp.json` file:
-
-    ```json
-    {
-      "servers": {
-        "github": {
-          "url": "https://api.githubcopilot.com/mcp/"
-        }
-      }
-    }
-    ```
-
-3. Save the file. Then activate the CodeLens information that appears over the new server to authenticate to this server through a GitHub account.
-
-4. In Visual Studio, select the **Ask** arrow in the GitHub Copilot Chat window, and then select **Agent**.
-
-:::moniker range="visualstudio"
-
-:::image type="content" source="media/visualstudio/copilot-agent-dropdown.png" alt-text="Screenshot that shows the Agent button in Copilot." lightbox="media/visualstudio/copilot-agent-dropdown.png":::
-
-:::moniker-end
-
-:::moniker range="<=vs-2022"
-
-:::image type="content" source="media/vs-2022/copilot-agent-mode/copilot-agent-dropdown.png" alt-text="Screenshot that shows the Copilot agent mode selector." lightbox="media/vs-2022/copilot-agent-mode/copilot-agent-dropdown.png":::
-
-:::moniker-end
-
-5. Select the tools that you want to use; for example, **List issues**.
-
-:::moniker range="visualstudio"
-
-:::image type="content" source="media/visualstudio/model-context-protocol-github-tools-list.png" alt-text="Screenshot that shows the MCP GitHub tools." lightbox="media/visualstudio/model-context-protocol-github-tools-list.png":::
-
-:::moniker-end
-
-:::moniker range="<=vs-2022"
-
-:::image type="content" source="media/vs-2022/mcp-servers/model-context-protocol-github-tools-list.png" alt-text="Screenshot that shows MCP GitHub tools." lightbox="media/vs-2022/mcp-servers/model-context-protocol-github-tools-list.png":::
-
-:::moniker-end
-
-    
-
-6. Try a sample prompt: **List issues assigned to me on GitHub**.
-
-
-:::moniker range="visualstudio"
-
-7. Copilot asks for permission to use a tool that the MCP server made available to it. Select **Confirm** with the scope that you want to proceed with.
-
-:::image type="content" source="media/visualstudio/copilot-agent-tool-approval.png" alt-text="Screenshot that shows the confirmation options for agent tools." lightbox="media/visualstudio/copilot-agent-tool-approval.png":::
-
-:::moniker-end
-
-:::moniker range="<=vs-2022"
-
-7. Copilot asks for permission to use a tool that the MCP server made available to it. Select **Allow** with the scope that you want to proceed with.
-
-:::image type="content" source="media/vs-2022/copilot-agent-mode/copilot-agent-tool-approval.png" alt-text="Screenshot that shows confirmation options for agent tools." lightbox="media/vs-2022/copilot-agent-mode/copilot-agent-tool-approval.png":::
-
-:::moniker-end
-
-## Supported MCP capabilities
-
-Visual Studio supports the following MCP capabilities:
-
-- The options for MCP server transport are local standard input/output (`stdio`), server-sent events (`sse`), and streamable HTTP (`http`).
-- Of the [features](https://modelcontextprotocol.io/specification/2025-03-26#features) (tools, prompts, resources, sampling), Visual Studio now supports:
-  - **Tools**: Execute actions and operations through Copilot agent mode
-  - **Prompts**: Reusable prompt templates that you can invoke with parameters
-  - **Resources**: Access external data and context through URI-based resources
-  - **Sampling**: Enhanced AI model interactions with your tools and services
-- Visual Studio provides servers with the current solution folders by using `roots` ([specification](https://modelcontextprotocol.io/docs/concepts/roots)).
-- For [MCP authorization](https://modelcontextprotocol.io/specification/draft/basic/authorization), Visual Studio supports authentication for remote servers with any OAuth provider.
-
-## Finding MCP servers
+## Find MCP servers
 
 The [official MCP server repository](https://github.com/modelcontextprotocol/servers) is a great starting point for reference, official, and community-contributed servers that showcase the versatility of MCP. You can explore servers for various functionalities, such as file system operations, database interactions, and web services.
 
 MCP is a relatively new standard, and the ecosystem is rapidly evolving. As more developers adopt MCP, you can expect to see an increasing number of servers and tools available for integration with your projects.
-
-### Example MCP servers
-
-Try out some other popular MCP servers in Visual Studio with one-click:
-
-- [![Install Awesome MCP in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install_Awesome_MCP-purple?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22name%22%3A%22Awesome%20Copilot%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22docker%22%2C%22args%22%3A%5B%22run%22%2C%22-i%22%2C%22--rm%22%2C%22ghcr.io%2Fmicrosoft%2Fmcp-dotnet-samples%2Fawesome-copilot%3Alatest%22%5D%7D) – Discover and install custom prompts and instructions for GitHub Copilot.
-- [![Install MarkItDown MCP in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install_MarkItDown_MCP-purple?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22name%22%3A%22markitdown%22%2C%22gallery%22%3Atrue%2C%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22markitdown-mcp%22%5D%7D) – Convert various file formats (PDF, Word, Excel, images, audio) to Markdown.
-- [![Install DuckDB Server in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install_DuckDB_Server-purple?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22name%22%3A%22duckdb%22%2C%22gallery%22%3Atrue%2C%22inputs%22%3A%5B%7B%22id%22%3A%22duckdb_db_path%22%2C%22type%22%3A%22promptString%22%2C%22description%22%3A%22Path%20to%20the%20DuckDB%20database%20file%20(e.g.%2C%20%2Fpath%2Fto%2Fdatabase.duckdb)%22%2C%22password%22%3Afalse%7D%5D%2C%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22mcp-server-duckdb%22%2C%22--db-path%22%2C%22%24%7Binput%3Aduckdb_db_path%7D%22%5D%7D) – Query and analyze data in DuckDB databases locally and in the cloud.
-- [![Install MongoDB MCP in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install_MongoDB_MCP-purple?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22name%22%3A%22mongodb%22%2C%22gallery%22%3Atrue%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22mongodb-mcp-server%22%5D%7D) – Database operations and management. Execute queries, manage collections, aggregation pipelines, and document operations.
-- [![Install HuggingFace MCP in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install_HuggingFace_MCP-purple?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22name%22%3A%22huggingface%22%2C%22gallery%22%3Atrue%2C%22url%22%3A%22https%3A%2F%2Fhf.co%2Fmcp%22%7D) – Access models, datasets, and Spaces on the Hugging Face Hub.
 
 ## Options for adding an MCP server
 
@@ -143,6 +53,16 @@ You have multiple options to add an MCP server in Visual Studio.
 ### Install from the web
 
 Starting with the latest servicing release of version 17.14, Visual Studio supports direct installation of MCP servers. Select the **Install** button on an MCP server to automatically add it to your Visual Studio instance.
+
+#### Example MCP servers
+
+Try out some popular MCP servers in Visual Studio with one-click:
+
+- [![Install Awesome MCP in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install_Awesome_MCP-purple?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22name%22%3A%22Awesome%20Copilot%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22docker%22%2C%22args%22%3A%5B%22run%22%2C%22-i%22%2C%22--rm%22%2C%22ghcr.io%2Fmicrosoft%2Fmcp-dotnet-samples%2Fawesome-copilot%3Alatest%22%5D%7D) – Discover and install custom prompts and instructions for GitHub Copilot.
+- [![Install MarkItDown MCP in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install_MarkItDown_MCP-purple?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22name%22%3A%22markitdown%22%2C%22gallery%22%3Atrue%2C%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22markitdown-mcp%22%5D%7D) – Convert various file formats (PDF, Word, Excel, images, audio) to Markdown.
+- [![Install DuckDB Server in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install_DuckDB_Server-purple?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22name%22%3A%22duckdb%22%2C%22gallery%22%3Atrue%2C%22inputs%22%3A%5B%7B%22id%22%3A%22duckdb_db_path%22%2C%22type%22%3A%22promptString%22%2C%22description%22%3A%22Path%20to%20the%20DuckDB%20database%20file%20(e.g.%2C%20%2Fpath%2Fto%2Fdatabase.duckdb)%22%2C%22password%22%3Afalse%7D%5D%2C%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22mcp-server-duckdb%22%2C%22--db-path%22%2C%22%24%7Binput%3Aduckdb_db_path%7D%22%5D%7D) – Query and analyze data in DuckDB databases locally and in the cloud.
+- [![Install MongoDB MCP in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install_MongoDB_MCP-purple?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22name%22%3A%22mongodb%22%2C%22gallery%22%3Atrue%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22mongodb-mcp-server%22%5D%7D) – Database operations and management. Execute queries, manage collections, aggregation pipelines, and document operations.
+- [![Install HuggingFace MCP in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install_HuggingFace_MCP-purple?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22name%22%3A%22huggingface%22%2C%22gallery%22%3Atrue%2C%22url%22%3A%22https%3A%2F%2Fhf.co%2Fmcp%22%7D) – Access models, datasets, and Spaces on the Hugging Face Hub.
 
 ### Add an MCP Server from chat
 
