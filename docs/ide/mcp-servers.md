@@ -74,15 +74,15 @@ To add an MCP server from chat view:
 
 You can install an MCP server directly from the GitHub MCP server registry via Extensions in Visual Studio.
 
-1. From the Visual Studio menu, select **Extensions > MCP Registries...** to open the **MCP Server Manager**.
+1. From the Visual Studio menu, select **Extensions** > **MCP Registries...** to open the **MCP Server Manager**.
 
     :::image type="content" source="media/vs-2022/mcp-servers/model-context-protocol-registry.png" alt-text="Screenshot that shows the Extensions menu for MCP Registries." lightbox="media/vs-2022/mcp-servers/model-context-protocol-registry.png":::
        
-1. Select the desired server, and then select install for your Visual Studio instance.
+1. Select the server you want, and then select **Install** for your Visual Studio instance.
 
     :::image type="content" source="media/vs-2022/mcp-servers/model-context-protocol-server-manager.png" alt-text="Screenshot that shows adding an MCP server from the MCP Server Manager." lightbox="media/vs-2022/mcp-servers/model-context-protocol-server-manager.png":::
 
-### Add an MCP Server to the `.mcp.json` file
+### Add an MCP server to the `.mcp.json` file
 
 The following steps walk you through a configuration example with the GitHub MCP server:
 
@@ -126,7 +126,7 @@ The following steps walk you through a configuration example with the GitHub MCP
 
 ## Manage configuration of MCP servers
 
-Visual Studio supports the use of `mcp.json` files to store configuration information for MCP servers. `mcp.json` files store each server's name, transport type (e.g., stdio or SSE), the command to
+Visual Studio supports the use of `mcp.json` files to store configuration information for MCP servers. `mcp.json` files store each server's name, transport type (for example, stdio or SSE), the command to
 launch it, any arguments, and optional environment variables needed to connect to that server.
 
 If you don't already have an `mcp.json` file, create one in any of the supported locations based on your repository, user, or editor requirements.
@@ -154,7 +154,7 @@ Some of these locations require `.mcp.json`, whereas others require `mcp.json`.
 
 You can define both *remote* (URL and credentials) and *local* (command-line invocation) servers.
 
-It's common to invoke tools via package managers; for example, `npx -y @azure/mcp@latest` or `docker run ... mcp/github`. Visual Studio respects whatever command you specify, so you can pin versions or pass flags as needed.
+It's common to invoke tools through package managers. For example, use `npx -y @azure/mcp@latest` or `docker run ... mcp/github`. Visual Studio respects whatever command you specify, so you can pin versions or pass flags as needed.
 
 The format must follow the MCP specification. For example, it must include an array of server objects, each with `name`, `command` or `url`, and `transport`.
 
