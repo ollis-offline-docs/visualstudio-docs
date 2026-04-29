@@ -234,11 +234,11 @@ To manage authentication for an MCP server:
 
 :::moniker range="visualstudio"
 
-## MCP server allowlist policies
+## MCP server allow list policies
 
-MCP server usage in Visual Studio respects allowlist policies set by organization administrators through GitHub. When an allowlist is configured for your organization, you can only connect to approved MCP servers.
+MCP server usage in Visual Studio respects allow list policies set by organization administrators through GitHub. When an allow list is configured for your organization, you can only connect to approved MCP servers.
 
-If you try to connect to an MCP server that isn't on the allowlist, Visual Studio displays an error message indicating that the server isn't allowed by your organization's policy. Contact your organization administrator to request access to the server or to verify which servers are approved.
+If you try to connect to an MCP server that isn't on the allow list, Visual Studio displays an error message indicating that the server isn't allowed by your organization's policy. Contact your organization administrator to request access to the server or to verify which servers are approved.
 
 This feature helps organizations:
 
@@ -246,7 +246,7 @@ This feature helps organizations:
 - Maintain compliance with security policies
 - Centrally manage MCP server access across development teams
 
-For information on configuring MCP server allowlists as an administrator, see [Configure MCP server allowlist](visual-studio-github-copilot-admin.md#configure-mcp-server-allowlist).
+For information on configuring MCP server allow lists as an administrator, see [Configure MCP server allow list](visual-studio-github-copilot-admin.md#configure-mcp-server-allowlist).
 
 :::moniker-end
 
@@ -307,7 +307,7 @@ The GitHub policy settings on the GitHub Copilot dashboard for administrators go
 
 :::moniker range="visualstudio"
 
-Additionally, administrators can configure an MCP server allowlist to control exactly which MCP servers are permitted within their organization. For more information, see [Configure MCP server allowlist](visual-studio-github-copilot-admin.md#configure-mcp-server-allowlist).
+Additionally, administrators can configure an MCP server allow list to control exactly which MCP servers are permitted within their organization. For more information, see [Configure MCP server allow list](visual-studio-github-copilot-admin.md#configure-mcp-server-allowlist).
 
 :::moniker-end
 
