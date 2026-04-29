@@ -1,7 +1,7 @@
 ---
 title: Create dependency diagrams from your code
 description: Create a dependency diagram from your code in Visual Studio to visualize your software system's high-level, logical architecture. 
-ms.date: 01/12/2022
+ms.date: 04/16/2026
 ms.topic: how-to
 helpviewer_keywords:
 - architecture, dependency diagrams
@@ -39,22 +39,9 @@ Before you create a dependency diagram, ensure that your solution has a modeling
 > [!NOTE]
 > Dependency diagrams for .NET Core projects are supported starting Visual Studio 2019 version 16.2.
 
-1. On the **Architecture** menu, choose **New Dependency Diagram**.
+1. Right-click your modeling project in Solution Explorer and select **Add** > **New Item**. 
 
-2. Under **Templates**, choose **dependency diagram**.
-
-3. Name the diagram.
-
-4. In **Add to Modeling Project**, browse to and select an existing modeling project in your solution.
-
-     -or-
-
-     Choose **Create a new modeling project** to add a new modeling project to the solution.
-
-    > [!NOTE]
-    > The dependency diagram must exist inside a modeling project. However, you can link it to items anywhere in the solution.
-
-5. Make sure to save both, the modeling project and the dependency diagram.
+1. In the **Add New Item** window, select **Dependency Validation Diagram**, enter a name for the diagram at the bottom of the window, and then select **Add**.   
 
 ## Drag and drop, or copy and paste, from a Code Map
 
@@ -64,7 +51,7 @@ Before you create a dependency diagram, ensure that your solution has a modeling
 
 3. On the generated Code Map, remove the "External" node, or expand it to show external assemblies, depending on whether you want to enforce namespace dependencies. Delete non-required assemblies from the Code Map.
 
-4. Create a new Dependency Diagram for the solution using the **Architecture** menu.
+4. Add a **Dependency Validation Diagram** item to the Dependency Validation project in your solution. 
 
 5. Select all the nodes on the Code Map (use *Ctrl* + *A*, or use the rubber band selection by pressing the *Shift* key before you click, drag, and release).
 
@@ -72,7 +59,7 @@ Before you create a dependency diagram, ensure that your solution has a modeling
 
 7. This shows the current app architecture. Decide what you want the architecture to be and modify the dependency diagram accordingly.
 
-![Dependency diagram generated from a Code Map](media/dependency-validation-01.png)
+:::image type="content" source="media/visualstudio/dependency-validation-01.png" alt-text="Screenshot that shows a dependency diagram generated from a Code Map." lightbox="media/visualstudio/dependency-validation-01.png":::
 
 ## <a name="CreateLayers"></a> Create layers from artifacts
  You can create layers from Visual Studio solution items, such as projects, code files, namespaces, classes, and methods. This automatically creates links between layers and items, including them in the layer validation process.
