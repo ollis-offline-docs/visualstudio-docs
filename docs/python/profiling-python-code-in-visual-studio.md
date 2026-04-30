@@ -5,7 +5,7 @@ ms.date: 04/18/2024
 ms.topic: how-to
 author: Devdiv-VR
 ms.author: vedhar
-
+monikerRange: '<= vs-2022'
 ms.subservice: python
 
 # CustomerIntent: As a developer, I want to develop Python projects in Visual Studio so I can use debugging and profiling features to check the performance of my Python code.
