@@ -2,7 +2,7 @@
 title: Create a Python Web App with Visual Studio
 titleSuffix: ""
 description: Learn how to use Visual Studio and the Flask framework to build a web application in Python, add a code file, and run the app.
-ms.date: 07/29/2025
+ms.date: 04/15/2026
 ms.subservice: python
 ms.topic: quickstart
 author: cwebster-99
@@ -17,7 +17,15 @@ ms.custom: vs-acquisition
 
 In this quickstart, you create a Python web application based on the Flask framework in Visual Studio. You create the project through discrete steps that help you learn about Visual Studio's basic features. Explore how to create project items, add code, and run applications.
 
-::: moniker range=">=vs-2022"
+::: moniker range="visualstudio"
+
+If you need to install Visual Studio, go to [Visual Studio downloads](https://aka.ms/vs/download/?cid=learn-onpage-download-cta) to install it for free. In the Visual Studio Installer, select the **Python development** workload. In the installation details pane, select **Python web support**.
+
+:::image type="content" source="media/visualstudio/python-web.png" alt-text="Screenshot of the Visual Studio Installer with the Python development workload and Python web support selected." lightbox="media/visualstudio/python-web.png":::
+
+::: moniker-end
+
+::: moniker range="vs-2022"
 
 If you need to install Visual Studio, go to [Visual Studio downloads](https://aka.ms/vs/download/?cid=learn-onpage-download-cta) to install it for free. In the Visual Studio Installer, select the **Python development** workload. In the installation details pane, select **Python web support**.
 
@@ -33,7 +41,13 @@ The following steps create an empty project that serves as a container for the a
 
 1. In the **Create a new project** dialog, enter *Python web* in the search box. In the results list, select **Web Project**, and then select **Next**.
 
-   ::: moniker range=">=vs-2022"
+   ::: moniker range="visualstudio"
+
+   :::image type="content" source="media/visualstudio/python-web-project.png" alt-text="Screenshot that shows how to create a new Python Web Project in Visual Studio." lightbox="media/visualstudio/python-web-project.png":::
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2022"
 
    :::image type="content" source="media/vs-2022/python-web-project.png" alt-text="Screenshot that shows how to create a new Python Web Project in Visual Studio." lightbox="media/vs-2022/python-web-project.png":::
 
@@ -55,7 +69,13 @@ The following steps create an empty project that serves as a container for the a
 
    The new project opens in **Solution Explorer**. The **Solution name** is automatically set to match the **Project name**. The new project is empty because it doesn't contain any files.
 
-   ::: moniker range=">=vs-2022"
+   ::: moniker range="visualstudio"
+
+   :::image type="content" source="media/visualstudio/solution-explorer-python.png" alt-text="Screenshot showing the newly created empty Python Web Project in the Solution Explorer." lightbox="media/visualstudio/solution-explorer-python.png":::
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2022"
 
    :::image type="content" source="media/vs-2022/solution-explorer.png" alt-text="Screenshot showing the newly created empty Python Web Project in the Solution Explorer." lightbox="media/vs-2022/solution-explorer.png":::
 
@@ -77,7 +97,13 @@ Use the following steps to install the Flask library into the default *global en
 
 1. Expand the **Python Environments** node in the project to see the default environment for the project.
 
-   ::: moniker range=">=vs-2022"
+   ::: moniker range="visualstudio"
+
+   :::image type="content" source="media/visualstudio/python-environment.png" alt-text="Screenshot that shows the default environment in Solution Explorer in Visual Studio." lightbox="media/visualstudio/python-environment.png":::
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2022"
 
    :::image type="content" source="media/vs-2022/python-environment.png" alt-text="Screenshot that shows the default environment in Solution Explorer in Visual Studio." lightbox="media/vs-2022/python-environment.png":::
 
@@ -91,7 +117,13 @@ Use the following steps to install the Flask library into the default *global en
 
    - If the **Flask** command doesn't appear below the search box, select **Run command: pip install flask**.
 
-      ::: moniker range=">=vs-2022"
+      ::: moniker range="visualstudio"
+
+      :::image type="content" source="media/visualstudio/install-flask.png" alt-text="Screenshot that shows how to install the Flask library by using pip install in Visual Studio." lightbox="media/visualstudio/install-flask.png":::
+
+      ::: moniker-end
+
+      ::: moniker range="vs-2022"
 
       :::image type="content" source="media/vs-2022/install-flask.png" alt-text="Screenshot that shows how to install the Flask library by using pip install in Visual Studio." lightbox="media/vs-2022/install-flask.png":::
 
@@ -101,7 +133,13 @@ Use the following steps to install the Flask library into the default *global en
 
 1. After you install Flask, the library appears in the environment in **Solution Explorer**. You can now use Flask commands in your Python code.
 
-   ::: moniker range=">=vs-2022"
+   ::: moniker range="visualstudio"
+
+   :::image type="content" source="media/visualstudio/flask-installed.png" alt-text="Screenshot that shows the Flask library installed and present in Solution Explorer in Visual Studio." lightbox="media/visualstudio/flask-installed.png":::
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2022"
 
    :::image type="content" source="media/vs-2022/flask-installed.png" alt-text="Screenshot that shows the Flask library installed and present in Solution Explorer in Visual Studio." lightbox="media/vs-2022/flask-installed.png":::
 
@@ -156,7 +194,13 @@ Follow these steps to run your web application:
 
 1. In **Solution Explorer**, right-click the *app.py* file and select **Set as Startup File**. This command identifies the code file to launch in Python when running the app.
 
-   ::: moniker range=">=vs-2022"
+   ::: moniker range="visualstudio"
+
+   :::image type="content" source="media/visualstudio/set-startup-file.png" alt-text="Screenshot that shows how to set the startup file for a project in Solution Explorer in Visual Studio." lightbox="media/visualstudio/set-startup-file.png":::
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2022"
 
    :::image type="content" source="media/vs-2022/set-startup-file.png" alt-text="Screenshot that shows how to set the startup file for a project in Solution Explorer in Visual Studio." lightbox="media/vs-2022/set-startup-file.png":::
 

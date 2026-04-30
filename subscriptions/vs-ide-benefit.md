@@ -1,18 +1,16 @@
 ---
-title: Visual Studio IDE in Visual Studio subscriptions
+title: Visual Studio IDE in Visual Studio Subscriptions
 author: joseb-rdc
 ms.author: amast
-ms.manager:  shve
-ms.date: 04/03/2026
+ms.manager: shve
+ms.date: 04/29/2026
 ms.topic: how-to
-description: In this article, you learn how to download and install the Visual Studio IDE included in your Visual Studio subscription.
+description: In this article, you learn how to download and install the Visual Studio IDE included in your Visual Studio Subscription.
 ---
 
 # The Visual Studio IDE
 
-This article explains how the Visual Studio IDE is included with Visual Studio Subscriptions and how to download and install it.
-
-As a Visual Studio subscriber, you have access to the Visual Studio integrated development environment (IDE). Your IDE version depends on the level of your subscription. The benefit appears as a tile in the **Tools** category on the **Benefits included in my subscription** page of the [Visual Studio subscription portal](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+This article explains how the Visual Studio IDE is included as a **benefit** of Visual Studio Subscriptions and how to download and install it. If your subscription includes the IDE, you can download the latest release available for your subscription level from the [Visual Studio Subscriptions portal]( https://my.visualstudio.com/benefits), where it appears as a benefit tile in the **Tools** category.
 
 ## Download and install the IDE
 
@@ -24,7 +22,9 @@ Here's how to download and install the IDE for your version of Visual Studio. We
 
    ![Screenshot of the Visual Studio Enterprise tile and accompanying 'Download' button.](media/vs-ide-experience/visual-studio-ide-tile-revised.png "Screenshot of the Visual Studio Enterprise tile and accompanying Download button.")
 
-   Product keys aren’t available for all Visual Studio Subscriptions levels; for the Visual Studio IDE, authentication is based on account sign-in. For more information, see [Access and authenticate the Visual Studio IDE  by signing in]( https://learn.microsoft.com/visualstudio/subscriptions/use-visual-studio-without-key).
+   To use the Visual Studio IDE, sign in with the account your Visual Studio Subscription was assigned to. When you sign in, Visual Studio automatically verifies your subscription and unlocks the IDE.
+
+   Product keys aren’t required for the Visual Studio IDE. Authentication is based on your signed-in account. For more information, see [Access and authenticate the Visual Studio IDE  by signing in]( https://learn.microsoft.com/visualstudio/subscriptions/use-visual-studio-without-key).
 
 1. On the **Downloads** page, select your architecture: **x86** or **x64** and language preference if applicable then select **Download**.
 
