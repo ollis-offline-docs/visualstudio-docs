@@ -1,7 +1,7 @@
 ---
 title: "Supported Code Changes (C# and Visual Basic)"
-description: Understand what code changes are supported when you're using the Edit and Continue feature while debugging a C# or Visual Basic project in Visual Studio.
-ms.date: "3/21/2025"
+description: Understand what code changes are supported when you're using the Hot Reload feature while debugging a C# or Visual Basic project in Visual Studio.
+ms.date: "4/28/2026"
 ms.topic: concept-article
 dev_langs:
   - "CSharp"
@@ -40,7 +40,7 @@ The following table shows the changes that might be made to C# and Visual Basic 
 
 
 > [!NOTE]
-> Newer language features such as string interpolation and null-conditional operators are generally supported by Edit and Continue. For the most current information, see the [Enc Supported Edits](https://github.com/dotnet/roslyn/blob/main/docs/wiki/EnC-Supported-Edits.md) page. For .NET Framework, the supported features are a subset of the listed features and are dependent on the compiler version.
+> Newer language features such as string interpolation and null-conditional operators are generally supported by Edit and Continue. For the most current information, see the [Supported Edits](https://github.com/dotnet/roslyn/blob/main/docs/wiki/EnC-Supported-Edits.md) page. For .NET Framework, the supported features are a subset of the listed features and are dependent on the compiler version.
 
 ::: moniker range=">=vs-2022"
 
@@ -113,9 +113,7 @@ Unsupported applications or platforms include:
 
 - F#
 - .NET Native
-- Silverlight 5
 - Windows 8.1
-- Xamarin.Forms (iOS and Android)
 
 For ASP.NET and ASP.NET Core, editing isn't supported for the following file types:
 
@@ -123,7 +121,6 @@ For ASP.NET and ASP.NET Core, editing isn't supported for the following file typ
 - .aspx
 - .ascx
 ::: moniker-end
-
 
 ## Unsupported scenarios
 
@@ -151,6 +148,5 @@ Edit and Continue isn't available in the following debugging scenarios:
 
 ## Related content
 
-- [Edit and Continue (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [How to: Use Edit and Continue (C#)](/visualstudio/debugger/edit-and-continue-visual-csharp)
-- [Configure Edit and Continue](../debugger/how-to-enable-and-disable-edit-and-continue.md)
+- [Hot Reload (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
+- [Configure Hot Reload](../debugger/how-to-enable-and-disable-edit-and-continue.md)

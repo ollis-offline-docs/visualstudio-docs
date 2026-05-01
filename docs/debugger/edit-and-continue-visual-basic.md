@@ -26,7 +26,6 @@ ms.custom: awp-ai
 Hot Reload, previously called Edit and Continue, is a feature for Visual Basic debugging that enables you to change your code while it's executing in Break mode. After code edits have been applied, you can resume code execution with the new edits in place and see the effect.
 ::: moniker-end
 
-
 You can use Hot Reload whenever you enter Break mode. In Break mode, the instruction pointer, a yellow arrowhead in the source window, points to the line containing an executable statement in a method or property body that will be executed next.
 
 When you make an unauthorized edit, the change is marked with a purple wavy underline and a task is displayed in the Task List. You must undo an unauthorized edit if you want to continue to use Hot Reload. Certain unauthorized edits may be permitted if done outside Hot Reload. If you want to retain the results of such an unauthorized edit, you must stop debugging and restart your application.
