@@ -450,6 +450,7 @@ You can leave the app running. As you make changes, the app automatically refres
             <script type="module" defer src="/src/main.jsx"></script>
         </head>
         <body>
+          <main></main>
         </body>
     </html>
     ```
