@@ -155,6 +155,8 @@ For more information, see:
 - [Python/C++ mixed-mode debugging](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Remote debugging on Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Feature tour of the Visual Studio debugger](../debugger/debugger-feature-tour.md)
+
+:::moniker range="vs-2022"
 ## Profiling tools with comprehensive reporting
 
 Profiling explores how time is being spent within your application. Visual Studio supports profiling with CPython-based interpreters and includes the ability to compare performance between different profiling runs.
@@ -165,6 +167,8 @@ For more information, see:
 
 - [Python profiling tools](profiling-python-code-in-visual-studio.md)
 - [Visual Studio profiling feature tour](../profiling/profiling-feature-tour.md)
+::: moniker-end
+
 ## Unit testing tools
 
 Discover, run, and manage tests in Visual Studio **Test Explorer**, and easily debug unit tests.
