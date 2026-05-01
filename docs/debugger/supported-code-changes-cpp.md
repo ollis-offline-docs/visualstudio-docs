@@ -1,7 +1,7 @@
 ---
 title: "Supported Code Changes (C++)"
-description: Understand what code changes are supported when you're using the Edit and Continue feature while debugging a C++ project in Visual Studio.
-ms.date: "11/05/2025"
+description: Understand what code changes are supported when you're using the Hot Reload feature while debugging a C++ project in Visual Studio.
+ms.date: "04/28/2026"
 ms.topic: concept-article
 dev_langs:
   - "C++"
@@ -22,9 +22,9 @@ ms.subservice: debug-diagnostics
 ---
 # Supported Code Changes (C++)
 
-Edit and Continue for C++ projects handles most types of code changes. However, some changes can't be applied during program execution. To apply these changes, you must stop execution and build a fresh version of the code.
+The Hot Reload mechanism, previously called Edit and Continue, handles most types of code changes. However, some changes can't be applied during program execution. To apply these changes, you must stop execution and build a fresh version of the code.
 
-See [Edit and Continue (C++)](../debugger/edit-and-continue-visual-cpp.md) for information about working with Edit and Continue for C++ in Visual Studio.
+See [Hot Reload (C++)](../debugger/edit-and-continue-visual-cpp.md) for information about working with Hot Reload for C++ in Visual Studio.
 
 ## <a name="BKMK_Requirements"></a> Requirements
 
@@ -96,11 +96,11 @@ The following C/C++ changes can't be applied during a debugging session. If you 
    - When lambdas have a static or global member.
    - When you pass lambdas to an `std::function`. This method causes a genuine ODR violation and results in C1092.
 
-- Edit and Continue doesn't update static libraries. If you make a change in a static library, execution continues with the old version and no warning is issued.
+- Hot Reload doesn't update static libraries. If you make a change in a static library, execution continues with the old version and no warning is issued.
 
 ## <a name="BKMK_Unsupported_scenarios"></a> Unsupported scenarios
 
-Edit and Continue for C/C++ is unavailable in the following debugging scenarios:
+Hot Reload for C/C++ is unavailable in the following debugging scenarios:
 
 - Debugging native apps compiled with [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging)
 
@@ -122,14 +122,14 @@ Edit and Continue for C/C++ is unavailable in the following debugging scenarios:
 
 - Debugging an old version of your code after a new version failed to build because of build errors.
 
-- Using a custom compiler (*cl.exe*) path. For security reasons, for recompilation of a file during Edit and Continue, Visual Studio always uses the installed compiler. If you're using a custom compiler path (for example, through a custom `$(ExecutablePath)` variable in your `*.props` file), a warning is displayed and Visual Studio falls back to using the installed compiler of the same version/architecture.
+- Using a custom compiler (*cl.exe*) path. For security reasons, for recompilation of a file during Hot Reload, Visual Studio always uses the installed compiler. If you're using a custom compiler path (for example, through a custom `$(ExecutablePath)` variable in your `*.props` file), a warning is displayed and Visual Studio falls back to using the installed compiler of the same version/architecture.
 
-- Legacy Architectures/MSVC toolsets. With the MSVC v140 toolset, the default debugger supports Edit and Continue with both X86 and X64 applications. Legacy toolsets support only X86 applications. Toolsets older than MSVC v120 should use the legacy debugger by checking "_Debug > Options > General >_ Use Native Compatibility Mode" in order to use Edit and Continue.
+- Legacy Architectures/MSVC toolsets. With the MSVC v140 toolset, the default debugger supports Hot Reload with both X86 and X64 applications. Legacy toolsets support only X86 applications. Toolsets older than MSVC v120 should use the legacy debugger by checking "_Debug > Options > General >_ Use Native Compatibility Mode" in order to use Edit and Continue.
 
 
 ## <a name="BKMK_IDL_attribute_limitations"></a> IDL attribute limitations
 
-Edit and Continue doesn't regenerate interface definition language (IDL) files. Therefore, changes to IDL attributes aren't reflected while you're debugging. To see the result of changes to IDL attributes, you must stop debugging and rebuild your app. Edit and Continue doesn't generate an error or warning if IDL attributes have changed. For more information, see [IDL Attributes](/cpp/windows/idl-attributes).
+Hot Reload doesn't regenerate interface definition language (IDL) files. Therefore, changes to IDL attributes aren't reflected while you're debugging. To see the result of changes to IDL attributes, you must stop debugging and rebuild your app. Hot Reload doesn't generate an error or warning if IDL attributes have changed. For more information, see [IDL Attributes](/cpp/windows/idl-attributes).
 
 ## <a name="BKMK_Diagnosing_issues"></a> Diagnosing issues
 
@@ -144,9 +144,9 @@ If your scenario doesn't fit any of the conditions mentioned above, you can gath
     ::: moniker-end
 
 
-Setting this value at the start of a debug session causes the various components of Edit and Continue to spew verbose logging to the **Output Window** > **Debug** pane.
+Setting this value at the start of a debug session causes the various components of Hot Reload to spew verbose logging to the **Output Window** > **Debug** pane.
 
 ## Related content
 
-- [Edit and Continue (C++)](../debugger/edit-and-continue-visual-cpp.md)
-- [Configure Edit and Continue](../debugger/how-to-enable-and-disable-edit-and-continue.md)
+- [Hot Reload (C++)](../debugger/edit-and-continue-visual-cpp.md)
+- [Configure Hot Reload](../debugger/how-to-enable-and-disable-edit-and-continue.md)
